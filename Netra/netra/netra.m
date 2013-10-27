@@ -10,11 +10,9 @@
 
 @implementation netra
 static netra *sharedObject = Nil;
-static dispatch_once_t once_token = 0;
+static dispatch_once_t onceToken;
 + (netra*)sharedInstance
 {
-	
-    static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
         
@@ -34,7 +32,6 @@ static dispatch_once_t once_token = 0;
     if([emailTest evaluateWithObject:inputText]) {
         aRange = [inputText rangeOfString:@"." options:NSBackwardsSearch range:NSMakeRange(0, [inputText length])];
         int indexOfDot = aRange.location;
-        //NSLog(@"aRange.location:%d - %d",aRange.location, indexOfDot);
         if(aRange.location != NSNotFound) {
             NSString *topLevelDomain = [inputText substringFromIndex:indexOfDot];
             topLevelDomain = [topLevelDomain lowercaseString];
