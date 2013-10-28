@@ -38,6 +38,7 @@
 		D0AEA03E181D65AE008351A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AEA03D181D65AE008351A6 /* SystemConfiguration.framework */; };
 		D0AEA042181D67B1008351A6 /* netra.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AEA041181D67B1008351A6 /* netra.m */; };
 		D0AEA045181D6B87008351A6 /* NetrahtmlStripper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AEA044181D6B87008351A6 /* NetrahtmlStripper.m */; };
+		D0AEA048181D6F34008351A6 /* NetraNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AEA047181D6F34008351A6 /* NetraNetwork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,8 @@
 		D0AEA041181D67B1008351A6 /* netra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netra.m; sourceTree = "<group>"; };
 		D0AEA043181D6B87008351A6 /* NetrahtmlStripper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetrahtmlStripper.h; sourceTree = "<group>"; };
 		D0AEA044181D6B87008351A6 /* NetrahtmlStripper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetrahtmlStripper.m; sourceTree = "<group>"; };
+		D0AEA046181D6F34008351A6 /* NetraNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetraNetwork.h; sourceTree = "<group>"; };
+		D0AEA047181D6F34008351A6 /* NetraNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetraNetwork.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,7 @@
 		D0AE9FDF181D6575008351A6 /* Netra */ = {
 			isa = PBXGroup;
 			children = (
+				D0AEA049181D6FD8008351A6 /* model */,
 				D0AEA03F181D678B008351A6 /* netra */,
 				D0AEA008181D6590008351A6 /* library */,
 				D0AE9FE8181D6575008351A6 /* NetraAppDelegate.h */,
@@ -270,8 +274,17 @@
 				D0AEA041181D67B1008351A6 /* netra.m */,
 				D0AEA043181D6B87008351A6 /* NetrahtmlStripper.h */,
 				D0AEA044181D6B87008351A6 /* NetrahtmlStripper.m */,
+				D0AEA046181D6F34008351A6 /* NetraNetwork.h */,
+				D0AEA047181D6F34008351A6 /* NetraNetwork.m */,
 			);
 			path = netra;
+			sourceTree = "<group>";
+		};
+		D0AEA049181D6FD8008351A6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +394,7 @@
 				D0AEA034181D659B008351A6 /* AFURLResponseSerialization.m in Sources */,
 				D0AE9FE6181D6575008351A6 /* main.m in Sources */,
 				D0AEA045181D6B87008351A6 /* NetrahtmlStripper.m in Sources */,
+				D0AEA048181D6F34008351A6 /* NetraNetwork.m in Sources */,
 				D0AEA03B181D659B008351A6 /* UIProgressView+AFNetworking.m in Sources */,
 				D0AEA02F181D659B008351A6 /* AFHTTPSessionManager.m in Sources */,
 				D0AEA036181D659B008351A6 /* AFNetworkActivityIndicatorManager.m in Sources */,
